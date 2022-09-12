@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "Arnimo";
+    src: url(../fonts/arimo/Arimo-Bold.ttf);
+    src: url(../fonts/arimo/Arimo-BoldItalic.ttf);
+    src: url(../fonts/arimo/Arimo-Italic.ttf);
+    src: url(../fonts/arimo/Arimo-Regular.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(52, 22, 22);
+}
+
+@media screen and (max-width:390px) {
+    i {
+        color: rgb(216, 173, 173);
+        font-size: 1.75rem;
+    }
+    header {
+        top: 0;
+        position: sticky;
+        height: 4rem;
+        background-color: rgb(119, 16, 16);
+    }
+    header > nav {
+        height: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem 0;
+    }
+    header > nav img {
+        height: calc(100% - 10px);
+        width: 125px;
+    }
+    header i:nth-child(1){
+        background-color: rgba(128, 128, 128, 0.626);
+        padding: .5rem;
+        border-radius: 50%;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        background-color:  rgb(119, 16, 16);
+        width: 100%;
+        height: 4rem;
+    }
+    footer nav {
+        display:flex;
+        justify-content: space-between;
+        padding: 0 1rem 0;
+        align-items: center;
+        height: inherit;
+    }
+    main {
+        width:100%;
+        padding-top: 3rem;
+    }
+    main > .post{
+        background-color : transparent;
+        border:1px solid rgb(216, 173, 173);
+        height: max-content;
+        color: white;
+        font-family: "Arnimo";
+        width: 100vw;
+        
+      }
+      
+    .post > .user {
+        background-color: transparent;
+        padding: 1rem 1rem 0;
+        width: 100%;
+        /* display: grid;
+        grid-template-columns: repeat(2, 1fr); */
+        display: flex;
+        font-size: .75rem;
+    }
+    .user > .info {
+        margin-left: .5rem;
+    }
+    .info :nth-child(2) {
+        color: rgb(170, 166, 166);
+    }
+    .info :nth-child(2) , .info :nth-child(3){
+        font-size: .5rem;
+        margin-right: .5rem;
+    }
+    figure {
+        margin-top: 1rem;
+        height: calc(100% - 20%);
+        z-index: 0;
+        margin: 1rem;
+    }  
+    figure figcaption {
+        margin-bottom: .5rem;
+    }
+    figure img {
+        width: 100%;
+    }
+    .feedback {
+        padding: .5rem 2rem .5rem;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid rgb(216, 173, 173);
+    }
+    .feedback > button {
+        background-color: transparent;
+        border: none;
+    }
+    .feedback button > span {
+        color: white;
+        margin-left: .25rem;
+    }
+    .feedback > button i {
+        font-size: .99rem;
+    }
+}
