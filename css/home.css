@@ -57,13 +57,16 @@ body {
         align-items: center;
         height: inherit;
     }
-    main {
+    .container-1 {
         width:100%;
         padding-top: 3rem;
+        
     }
-    main > .post{
+    .container-1 > .post{
         background-color : transparent;
         border:1px solid rgb(216, 173, 173);
+        border-left: none !important;
+        border-right: none !important;
         height: max-content;
         color: white;
         font-family: "Arnimo";
@@ -75,8 +78,7 @@ body {
         background-color: transparent;
         padding: 1rem 1rem 0;
         width: 100%;
-        /* display: grid;
-        grid-template-columns: repeat(2, 1fr); */
+        
         display: flex;
         font-size: .75rem;
     }
@@ -119,5 +121,142 @@ body {
     }
     .feedback > button i {
         font-size: .99rem;
+    }
+    .make-post{ 
+        position: relative;
+        width: fit-content;
+        padding: .5rem 1rem .7rem;
+        border-radius: 50%;
+        background-color: rgb(216, 173, 173);
+        color: rgb(119, 16, 16);
+        position: fixed;
+        right: 0;
+        bottom: 4.5rem;
+        border: none;
+        text-align: center;
+        margin-right: .5rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    
+    .container-2 {
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        background-color:  rgb(52, 22, 22);
+        z-index: 100;
+        overflow: hidden;
+        transform: translateY(100%);
+        top: 0;
+        transition: transform .15s .15s ease-in;
+    }
+    .container-2 > .header {
+        background-color:  rgb(119, 16, 16);
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .container-2 .header > button:first-child {
+        background-color: transparent;
+        border: none;
+    }
+    .container-2 .header > button {
+        background-color: rgb(216, 173, 173);
+        border: none;
+        border-radius: 10px;
+        padding: .15rem .75rem .15rem;
+        font-weight: 500;
+    }
+    .container-2 > .status {
+        border: none;
+        border-bottom: 2px solid rgb(216, 173, 173) !important;
+        height: 25%;
+        display: grid;
+        padding: 1rem;
+    }
+    .status > textarea {
+        outline: none;
+        color: white;
+        justify-self: center;
+        height: 100%;
+        width: 90%;
+        background-color: transparent;
+        border: none;
+        resize: none;
+        text-align: start;
+        font-size: 1.05rem;
+        font-family: "Arnimo";
+    }
+    .status > textarea::placeholder {
+        color: rgb(216, 173, 173);
+        
+    }
+    .container-2 > .attachments {
+        min-height: 200px;
+        max-height: 400px;
+        height: 300px;
+        border:none;
+    }
+    .container-2 > .footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr 1fr 3fr);
+      
+    }
+    .container-2 > .footer button:nth-child(3) i{
+        font-size: 1.25rem;
+        color: black;
+    }
+    .container-2 > .footer button:nth-child(3) {
+        border-radius: 10px;
+        padding: .25rem;
+        width: fit-content;
+        justify-self: center;
+        right: 0;
+    }
+    
+    .container-2 > .footer button{
+        border: none;
+        background-color: rgb(216, 173, 173);
+    }
+    .container-2 > .footer button:not(:nth-child(3)){
+        background-color:transparent;
+        padding: none;
+    }
+    .container-2 > .back {
+        background-color: rgb(216, 173, 173);
+        height: 35%;
+        width: 100%;
+        border-radius: 25px 25px 0px 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+        position: fixed;
+        bottom: 0;
+        transition: transform .05s .09s ease-in;
+        transform: translateY(100%);
+    }
+    .pop {
+        transform: translateY(0%) !important;
+    }
+    .container-2 > .back button > i {
+        color: black !important;
+    }
+    .container-2 > .back > button:last-child {
+        border: 1px solid black;
+        text-align: center;
+       
+        padding: .75rem 0 .75rem;
+        border-radius: 20px;
+    }
+    .container-2 > .back > button{
+        border: none;
+        background-color: transparent;
+        width: 80%;
+        align-self: center;
+        height: fit-content;
+        justify-self: center;
+        font-size: 1rem;
+        text-align: start;
+        
     }
 }

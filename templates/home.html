@@ -7,8 +7,8 @@
     <link rel="shortcut icon" href="../img/iMatch Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/home.css" >
     <script src="https://kit.fontawesome.com/9e7aa5c30a.js" crossorigin="anonymous"></script>   
-    
     <title>Home</title>
+    <script src="../js/home.js" defer async></script>
 </head>
 <body>
     <header>
@@ -18,7 +18,8 @@
             <i class="fa-solid fa-bell"></i>
         </nav>
     </header>
-    <main>
+    
+    <section class="container-1">
         <div class="post">
             <div class="user">
                 <div class="profile">
@@ -49,7 +50,59 @@
                 </button>
             </div>
         </div>
-    </main>
+
+        <button type="button" class="make-post" id="make-post">
+          +
+        </button>
+    </section>
+
+    <section class="container-2" id="container-2">
+        <div class="header">
+            <button class="exit" id="exit">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <button class="add-post">
+                POST
+            </button>
+        </div>
+
+        <div class="status">
+            <textarea name="" id="" placeholder="What's on your mind?"></textarea>
+        </div>
+
+        <div class="attachments">
+            
+        </div>
+
+        <div class="footer">
+            <button>
+                <i class="fa-solid fa-microphone-lines"></i>
+            </button>
+            
+            <button type="button">
+                <i class="fa-regular fa-image"></i>
+            </button>
+            <button type="button">
+                <i class="fa-solid fa-earth-americas"></i>
+                <span>Public</span>
+            </button>
+        </div>
+
+        <div class="back" id="back">
+            <button type="button">
+                <i class="fas fa-sticky-note"></i>
+                <span>Save as draft</span>
+            </button>
+            <button type="button" id="discard">
+                <i class="far fa-trash-alt"></i>
+                <span>Discard</span>
+            </button>
+            <button type="button" id="cancel">
+                Cancel
+            </button>
+        </div>
+    </section>
     <footer>
         <nav>
             <i class="fa-solid fa-house"></i>
@@ -58,5 +111,8 @@
             <i class="fa-solid fa-message"></i>
         </nav>
     </footer>
+    <script>
+       
+    </script>
 </body>
 </html>

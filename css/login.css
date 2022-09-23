@@ -106,7 +106,7 @@ body {
     .signin-phone input[type="text"]{
         background-color: transparent;
         border: 1px solid rgb(216, 173, 173);
-        outline: rgb(216, 173, 173);
+        outline: transparent;
         padding: .75rem;
         width: 85%;
         margin-top: 1.75rem;
